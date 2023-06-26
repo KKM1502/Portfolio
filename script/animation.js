@@ -96,17 +96,17 @@ function light(){
 }
 
 function forabout(){
-    $(window).scrollTop(1115);
+    $(window).scrollTop(1015);
 
 }
 function forskills(){
-    $(window).scrollTop(1649);
+    $(window).scrollTop(1549);
 
 }
 
 
 function forprojects(){
-    $(window).scrollTop(2429);
+    $(window).scrollTop(2299);
 
 }
 

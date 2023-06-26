@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: black;
+        }
+
+        body{
+            margin: 0px;
+        }
+        .menuwrap{
+            
+            display: inline-block;
+            background-color: none;
+            width: 350px;
+            height: 100vh;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            padding-top: 15px;
+            text-align: right;
+            background-color: #006182;
+            color: #DCDBD9;
+
+           
+
+
+        }
+
+        .menuwrap .photo{
+            
+            width: 150px;
+            height: 200px;
+            border: 1px solid white;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .menuwrap .myname{
+            width: 250px;
+            height: 50px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #DCDBD9;
+        }
+        .menuwrap .link{
+
+            width: 300px;
+            height: 40px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            float: right;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+        }
+        .menuwrap .navigation{
+            width: 260px;
+            height: 500px;
+            margin: auto;
+            list-style-type: none;
+            margin-top: 100px;
+        }
+        .menuwrap .navigation li{
+            margin-bottom: 50px;
+            font-size: 30px;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(to right, rgba(52, 74, 107, 0.667) 0%, gray 100%);
+            border-image-slice: 1;
+            text-decoration: none;
+            color: #DCDBD9;
+            font-weight: bold;
+        }
+       
+        .menuwrap .navigation  a{
+            text-decoration: none;
+            color: #DCDBD9;
+            font-weight: bold;
+            
+        }
+        .main{
+            margin-top: 0px;
+            padding-left: 350px;
+            width: 100%-350px;
+            height: 100%;
+            background-color: #DCDBD9;
+    
+        }
+
+        #subcontent{
+            font-size: 30px;
+            text-align: left;
+            padding-left: 100px;
+            padding-top: 50px;
+
+        }
+        .header1{
+            font-weight: bold;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .main{
+            text-align: center;
+            font-size: 45px;
+        }
+
+        #content1 table{
+            text-align: center;
+            font-size: 25px;
+            margin: 30px auto;
+            border-collapse: collapse;
+           
+        }
+        #content1 table td{
+            border: 1px solid black;
+        }
+        #content1 table #left{
+            font-size: 20px  ;
+            width: 100px;
+        }
+        #content1 table #right{
+            text-align: left;
+            padding: 10px 20px;
+            width: 800px;
+        }
+        .me{
+            border:  5px solid red;
+            font-weight: 600;
+        }
+        li a:hover {
+        opacity: 0.5;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menuwrap">
+            <div class="header1" ><a href="/portfolio/Portfolio.html" style="font-size: 25px; text-decoration: none; color: white;"> K_Min's Coding</a></div>
+         
+            <ul class="navigation">
+                <li ><a href="analysis.html">1.요구분석</a></li> 
+                <li><a href="screen.html">2.화면설계</a></li> 
+                <li><a href="data.html" >3.데이터파일</a></li> 
+                <li><a href="source.html">4.소스</a></li> 
+                <li><a href="5. 화면캡쳐/">5.화면캡쳐</a></li> 
+                <li><a href="7. 최종요약본/최종요약본(1조).pdf" >6.최종요약본</a></li> 
+                <!-- <li><a href=""  onmouseover="f1();" onmouseleave="f2();">7.화면캡쳐</a></li>  -->
+            </ul>
+            <div class="footer">
+            </div>
+        </div>
+        <div class="main">
+            <div id="content1">
+                1.요구분석
+                
+                <div id="subcontent">A. 기능 선택화면       </div>
+                <table>
+                    
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">기능 선택화면</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">A-01. 사용자 서비스 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">기능 선택을 위한 선택 화면 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">1. 기능 선택 화면에 은행 로고 출력하도록 한다.<br>
+                            2. 기능선택 화면에는 관리자 기능, 회원 로그인, 회원 가입, 프로그램 종료가 있다.<br>
+                            
+                            ⦁ 관리자 기능 선택<br>
+                               - 1번 선택 시 관리자 로그인 화면으로 이동한다.<br>
+                            
+                            ⦁ 고객 로그인<br>
+                               - 2번 선택 시 고객 로그인 화면으로 이동한다.<br>
+                            
+                            ⦁ 회원가입 <br>
+                               - 프로그램 이용자 대해 회원가입 기능을 제공한다.<br>
+                            
+                            ⦁ 프로그램 종료<br>
+                               - 프로그램이 종료된다.<br>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">⦁ 제시된 번호 이외의 번호를 선택한 경우<br>
+                            - 1(관리자 로그인), 2(회원 로그인), 3(비회원 로그인), 4(회원가입)을 제외한 다른 번호를 입력하면 프로그램이 종료됩니다.<br>
+                           </td>
+                    </tr>
+                </table>
+            
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 기능선택화면 > 고객 회원가입 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">A-02. 고객 회원가입  </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">기능을 사용하기 위한 회원가입 및 로그인 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">1. 회원가입 시 ID, PW, 이름, 주민등록번호, 계좌번호, 연락처를 입력 받는다.<br>
+                            2.	회원이 되면 고유한 회원 번호를 가진다.<br>
+                             2.  회원가입 완료하면 로그인 화면으로 넘어간다.<br>
+                             3.  로그인은 ID와 PW를 입력한다.<br>
+                            
+                            </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">⦁ 회원가입 모든 항목은 필수 입력 정보로 한다.<br>
+                            <br>
+                            ⦁ 이름, 생년월일, 성별, 전화번호<br>
+                              - 이름은 한글(2~5자)로 제한한다. <br>
+                              - 주민등록번호는 13자리로 제한한다. ( “-“은 제외하고 작성한다. )<br>
+                            - 전화번호는 OOO – OOOO – OOOO 형식으로 입력<br>
+                            <br>
+                            ⦁ 아이디<br>
+                              - 길이는 8~16자로 제한한다.<br>
+                              - 영문자와 숫자로만 구성되어야 한다.<br>
+                              - 첫 글자로 숫자를 사용 할 수 없다.<br>
+                              - 이미 존재하는 아이디를 입력했을 시, ‘중복된 아이디입니다.’라고 알려준다.<br>
+                              <br>
+                            ⦁ 비밀번호<br>
+                              - 영문자와 숫자로만 구성되어야 한다.<br>
+                              <br>
+                            ⦁ 입력이 잘못 됐을 시<br>
+                              - 입력 후 'n개의 항목이 회원가입 형식과 일치하지 않습니다.' 라고 알려주고,
+                                '회원 가입에 실패했습니다.' 라고 알려준다.<br>
+                            
+                           </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">기능 선택화면 > 로그인
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> A-03. 로그인</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자 화면으로 들어가기 위한 비밀번호 입력</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1. 관리자 로그인<br>
+                            - 관리자 로그인이 성공하면 관리자 추가, 상품 관리, 고객 관리를 
+                         할 수 있는 화면으로 넘어간다.<br> 
+                         <br>
+                          2. 고객 로그인<br>
+                            - 고객 로그인이 성공하면 메인화면으로 넘어간다.<br>
+                         
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            ⦁ 로그인 실패 시 <br>
+                            - 입력한 ID가 다르면 ‘일치하는 아이디가 없습니다.’라고 알려준다.<br>
+                            - 입력한 PW가 다르면 ‘비밀번호가 일치하지 않습니다.’ 라고 알려준다.<br>
+                            - ‘다시 입력하시겠습니까?’ 라고 한 번 더 물어본다.<br>
+                            - 둘 다 틀렸을 경우에는 ‘일치하는 아이디가 없습니다.’라고 알려준다.<br>
+                        
+
+
+                        </td>
+                    </tr>
+                </table>
+     
+                <table>
+                    <div id="subcontent">B. 관리자 기능</div>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">관리자 > 관리자 로그인 > 상품관리 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-01. 상품관리</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자가 서비스 가능한 금융 상품을 확인할 수 있는 화면 출력</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1. 제공하는 서비스의 종류를 확인할 수 있다.<br>
+                            2. 적금, 대출, 카드를 출력한다.<br>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+
+                            - 서비스종류 기능에서는 서비스를 추가 및 제거할 수 없다.<br>
+                            - 고객이 상품을 구매 시 구매 수량만큼 가입자 수가 증가한다.<br>
+                           
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 적금</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-02. 적금</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자가 서비스 가능한 적금 상품을 확인할 수 있음</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+
+                            1.	적금 상품 목록<br>
+
+                            2.	적금 상품 추가<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            0번을 입력하면 이전화면으로 돌아간다.
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">관리자 > 관리자 로그인 > 상품관리 > 적금 > 적금상품목록 
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-03. 적금상품목록</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 적금 상품을 수정 및 확인 할 수 있는 기능</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            - 서비스중인 적금 상품 목록을 볼 수 있다.<br>
+                            - 서비스중인 적금 상품 목록을 출력한다<br>
+                           - 적금 상품 정보로 이동할 수 있다<br>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            1번을 입력하면 적금 상품 정보로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 적금 > 적금상품목록 > 적금상품정보</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-04. 적금상품정보</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자가 적금정보를 조회 할 수 있다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            -서비스에 등록된 적금정보를 조회할 수 있다.<br>
+
+                            - 적금 상품 제거 탭으로 이동할 수 있다.<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            - 1번을 누르면 적금 상품 제거 탭으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">관리자 > 관리자 로그인 > 상품관리 > 적금 > 적금상품목록 > 적금 상품 정보 >적금 상품 제거</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">B-05. 적금상품제거</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">관리자가 적금을 삭제 할 수 있다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            -서비스에 등록된 적금을 제거할 수 있다
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            등록되지 않은 적금은 제거 할 수 없다
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 적금 > 적금상품추가</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-06. 적금상품추가</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">관리자가 적금을 추가 할 수 있다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+
+                            적금의 상세 정보를 입력하여 새로운 적금상품을 추가 할 수 있다.
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            존재하는 상품 번호로는 추가할 수 없다.
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 대출 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-07. 대출</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자가 대출 상품 정보를 확인 및 수정 할 수 있다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+
+                            1. 서비스중인 대출 상품 목록을 볼 수 있다.<br>
+                            2. 서비스중인 대출 상품 목록을 출력한다<br>
+                            3. 서비스 할 대출을 추가할 수 있다.<br>
+                            
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 대출 > 대출상품목록 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-08. 대출상품정보</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자가 대출 상품 목록 확인 할 수 있다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            - 서비스 중인 대출 상품의 목록을 확인 할 수 있다.<br>
+                            - 서비스 중인 대출을 제거하는 탭으로 이동할 수 있다.<br>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">관리자 > 관리자 로그인 > 상품관리 > 대출 > 대출상품목록 > 대출 상품 제거</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-09. 대출상품제거</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">관리자가 대출 상품을 제거할 수 있다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            - 서비스 중인 대출 상품을 제거 할 수 있다
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            등록되지 않은 대출 상품은 제거할 수 없다
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">관리자 > 관리자 로그인 > 상품관리 > 대출 > 대출상품추가</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-10. 대출상품추가</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자가 대출 상품을 추가 할 수 있다</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+
+                            대출의 상세 정보를 입력하여 새로운 대출 상품을 추가 할 수 있다.
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            존재하는 상품 번호로는 추가할 수 없다.
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left" >업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 카드</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-11. 카드</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 관리자가 카드 상품 목록을 조회하거나 추가 할 수있다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1. 서비스중인 카드 상품 목록을 볼 수 있다.<br>
+                            2. 서비스중인 카드 상품 목록을 출력한다<br>
+                            3. 서비스 할 카드를 추가할 수 있다.<br>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 카드 > 카드상품목록 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> B-12. 카드상품목록</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 카드 상품 정보 확인 기능을 제공한다.</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1. 서비스 중인 카드의 목록을 조회 할 수 있다.<br>
+
+                            2. 서비스에 등록된 카드를 제거할 수 있다.<br>
+                            
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">관리자 > 관리자 로그인 > 상품관리 > 카드 > 카드상품목록 > 카드상품제거 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">B-13. 카드상품제거 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">카드 상품 제거 기능을 제공한다. </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            서비스에 등록된 카드를 제거할 수 있다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            등록되지 않은 카드는 제거 할 수 없다
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 관리자 > 관리자 로그인 > 상품관리 > 카드 > 카드상품추가</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">B-14. 카드상품추가 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 카드 상품 추가 기능을 제공한다. </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            상제 정보를 입력하여 새로운 카드 상품을 추가 할 수 있다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            존재하는 상품 번호로는 추가할 수 없다.
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <div id="subcontent">C. 고객 기능</div>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">고객 > 고객 로그인 > 메인 화면 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-01 메인 화면 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 이용자 에게 메뉴화면을 보여준다. </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	적금 조회/ 추천<br>
+                            2.	대출 조회/ 추천<br>
+                            3.	카드 조회/ 추천<br>
+                            4.	가입한 상품 조회<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">고객 > 고객 로그인 > 메인 화면 > 적금 조회/ 추천  </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> C-02 적금 조회/추천</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객에게 적금 상품의 정보를 제공</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            -	적금 조회탭으로 이동<br>
+                            -	적금 추천탭으로 이동<br>
+                            -	적금 계산기 탭으로 이동<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 적금 조회/ 추천 > 적금 조회</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-03 적금 조회 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">고객에게 적금 상품의 정보를 제공 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	사용자가 적금을 선택하면 선택한 적금에 대한 정보가 출력
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">고객 > 고객 로그인 > 메인 화면 > 적금 조회/ 추천 > 적금 조회 > 적금 검색 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> C-03 적금 검색</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객에게 적금 상품의 정보를 필터링 해서 제공</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                                                    
+                            1.	가입 기간<br>
+                            2.	가입 목적<br>
+                            3.	연령대<br>
+                            4.	소득 <br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 적금 조회/ 추천  > 적금 계산기</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-04 적금 계산기 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객이 원하는 정보를 입력하면 그에 따른 적금을 계산해주는 기능</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	월 저축액 입력:<br>
+                            2.	기간 입력 :<br>
+                            3.	금리 입력:<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">고객 > 고객 로그인 > 메인 화면 > 적금 조회/ 추천 >  적금 추천 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> C-05 적금 추천</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">고객의 상황을 고려하여 적금 상품을 추천</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	고객의 나이, 가입 목적, 소득 등을 입력 받고 이를 토대로 적금 추천<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 대출 조회/ 추천 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> C-06 대출 조회/추천</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객에게 대출 상품의 정보를 제공</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            -	대출 조회탭으로 이동<br>
+                            -	대출 추천탭으로 이동<br>
+                            -	대출 계산기 탭으로 이동<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 대출 조회/ 추천 > 대출 조회</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> C-07 대출 조회</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">  고객에게 대출 상품 정보를 제공</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	사용자가 대출을 선택하면 선택한 대출에 대한 정보가 출력
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 대출 조회/ 추천 > 대출 조회 > 대출 상품 검색 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-08 대출 검색 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">고객에게 대출 상품의 정보를 필터링 해서 제공 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	최장 기간<br>
+                            2.	대출 목적<br>
+                            3.	대출 한도<br>
+                            4.	소득<br>
+                            5.	금리<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 대출 조회/ 추천 > 대출 조회 > 대출 추천 > 신용 대출</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right"> C-09 신용 대출</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">고객의 상황을 고려하여 대출 상품을 추천 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            상품 유형<br>
+                            1.전체 2. 직장인 3. 전문직 4. 사업자 5. 연급수급자. 6. 군인<br>
+                            가입 방법<br>
+                            1,전체 2. 인터넷뱅킹 3. 스타뱅킹 4. 리브Next 5. 영업점 6. 스마트대출<br>
+                            <br>
+                            (상품 유형과 가입 방법을 입력받아 이에 따른 대출 추천 상품을 출력한다.) 
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 대출 조회/ 추천 > 대출 추천 > 전월세/반환보증</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-10 전월세/반환보증 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객의 상황을 고려하여 대출 상품을 추천 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            상품 유형<br>
+                            1.	전체 2.전월세보증금대출 3.월세대출 4.전세금반환대출<br>
+                            <br>
+                            가입 방법<br>
+                            1.	전체 2.인터넷뱅킹 3.스타뱅킹 4.리브Next 5.영업점 6.스마트대출<br>
+                            <br>
+                            (상품 유형과 가입 방법을 입력받아 이에 따른 대출 추천 상품을 출력한다.) 
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 대출 조회/ 추천 > 대출 추천 > 자동차대출</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-11 자동차대출</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객의 상황을 고려하여 대출 상품을 추천</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            가입 방법<br>
+                            1.전체 2.인터넷뱅킹 3.스타뱅킹 4.리브Next 5.영업점 6.스마트대출<br><br>
+                            (가입방법을 입력받아 이에 따른 대출 추천 상품을 출력한다.)<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">  고객 > 고객 로그인 > 메인 화면 > 대출 조회/추천 > 대출 계산기 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-12 대출 계산</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객이 원하는 정보를 입력하면 그에 따른 적금을 계산해주는 기능</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            대출금액, 기간, 이자를 입력받아 이에 따른 대출 금액을 출력해준다. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 카드/조회 추천 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-13 카드 조회/추천</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객이 원하는 카드를 종류별로 제공하는 기능</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	체크카드<br>
+                            2.	신용카드<br>
+                            3.	카드 추천받기<br>
+                            0.	뒤로가기<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 카드 조회/추천 > 체크카드</td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-14 체크카드</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">고객에게 체크카드 상품 목록을 제공한다</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	사용자가 목록을 보고 상품 번호를 입력하면 해당 상품의 상세 정보가 출력된다
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">고객 > 고객 로그인 > 메인 화면 > 카드 조회/추천 > 신용카드 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-15 신용카드</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">고객에게 신용카드 상품 목록을 제공한다</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	사용자가 목록을 보고 상품 번호를 입력하면 해당 상품의 상세 정보가 출력된다
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="me">
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right">고객 > 고객 로그인 > 메인 화면 > 카드 조회/추천 > 카드 추천 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-16 카드 추천</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right">사용자 맞춤 카드 추천기능</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            1.	체크카드 OR 신용카드<br>
+                            2.	체크카드<br>
+                            -나이대를 입력하면 해당 나이대의 고객이 가입한 상품의 목록과 몇 명이 가입했는지 결과를 출력한다.<br>
+                            
+                            3.	신용카드<br>
+                            -나이대를 입력하면 해당 나이대의 고객이 가입한 상품의 목록과 몇 명이 가입했는지 결과를 출력한다.<br>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td id="left">업무 영역</td>
+                        <td id="right"> 고객 > 고객 로그인 > 메인 화면 > 가입된 상품 조회 </td>
+                    </tr>
+                    <tr>
+                        <td id="left">요구사항명</td>
+                        <td id="right">C-17 가입된 상품 조회</td>
+                    </tr>
+                    <tr>
+                        <td id="left">개요</td>
+                        <td id="right"> 고객이 가입한 상품들을 출력</td>
+                    </tr>
+                    <tr>
+                        <td id="left">상세설명</td>
+                        <td id="right">
+                            고객이 가입한 적금, 대출, 카드 상품들을 출력한다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="left">제약사항</td>
+                        <td id="right">
+                            -0번을 누르면 이전화면으로 이동
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+
+       
+    </script>
+</body>
+</html>

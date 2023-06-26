@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="script/animation.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="images/2018-07-27-15-26-35-960x640.jpg" id="bgimg" style="background-color: #FAF7F5;">
+        <div class="main">
+            <div id="home">
+                <div class="header1" style="font-size: 25px;">K_Min's Coding</div>
+                <div class="header2" style="font-size: 13px;">gyeong112@gmail.com</div>
+                <div class="mainheader">
+                    <div>K_Min's Portfolio</div>
+                </div>
+                <div class="subheader">Java & Oracle</div>
+            </div>
+            <div class="nav">
+                <ul id="navigation">
+                    <li><a href="">home</a></li>
+                    <li><a onclick="forabout();">about</a></li>
+                    <li><a onclick="forskills();">skills</a></li>
+                    <li><a onclick="forprojects();">Projects</a></li>
+                    <li><a onclick="light();">Contact</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <fieldset class="fieldset1" id="fieldset1">
+                    <input type="hidden" id="forabout" >
+                    <legend>
+                        <img src="김경민.jpg"  id="about">
+                    </legend>
+                    <div id="name">K_Min</div>
+                    <div id="fullname">@김경민</div>
+                    <br>
+                    <div id="intro">
+                        <div>안녕하십니까</div>
+                        <div>함께 성장하고 싶은 개발자 김경민입니다.</div>
+                       <!-- <a href="https://github.com/KKM1502" onclick="window.open(this.href, '_blank'); return false;" style="color: black;"> github</a> -->
+                       <div class="card" style="width: 12rem; height:110px; background-image:url(img/Github.jpeg);background-size: contain;" onclick="window.open(`https://github.com/KKM1502`);" > 
+                      </div>
+                        <br>
+                    </div>
+                    <div id="duce">
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset2">
+                    <h1>Skills</h1>
+                    <div id="skills">
+                        <img src="언어.png" alt="">
+                    </div>
+                 
+                </fieldset>
+                <fieldset id="fieldset4">
+                    <legend>Project3</legend>
+                    <h2 >Project 빌딩숲 <small><br>(7인 팀 프로젝트)</small></h2>
+                   
+                    <table id="list">
+            
+                        <!-- <div class="items"> -->
+                           
+                        <tr>
+                            <td id="swrapper1" >
+                                  <div id="slider-wrap">
+                                        <ul id="slider" style="padding-left: 0px;">
+                                            <li>     
+                                                <img src="Project1/3조 빌딩숲/메인화면.png">
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: white;">화면설계 일부  (피그마활용)</h3></DIV>
+                                                <img src="Project3/화면설계.png">
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: white;">SNS 구현화면 일부</h3></DIV>
+                                                <img src="Project3/1.SNS메인화면.png" >
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: #FAF7F5;">SNS CRUD 일부</h3></DIV>
+                                                <img src="Project3/2.SNS게시판-글쓰기.gif" style="width: 350px;height: 550px; margin-left: 200px;">
+                                            </li>
+
+                                        </ul>
+                                      
+                                       <!--controls-->
+                                        <div class="btns next" id="next1" data-index="1"><i class="fa fa-arrow-right"></i></div>
+                                        <div class="btns previous" id="previous1" data-index="1"><i class="fa fa-arrow-left"></i></div>
+                                        <div id="counter"></div>
+                                      
+                                        <div id="pagination-wrap">
+                                        <ul>
+                                       </ul>
+                                    </div>
+                                      <!--controls-->  
+                                             
+                                </div>
+                              
+                            </td>
+                            <td class="projectinfo" style="padding-top: 30px;" >
+                                <table style="width: 673px; border-bottom: 5px solid #EEECECD2;">
+                                    <tr>
+                                        <td colspan="2" style="text-align: left; ">
+                                            <strong>직장인들을 위한 다목적 커뮤니티 사이트</strong><br>
+                                            같은 빌딩 내 직장인들 간의 소통, 협력, 사회적 연결을 촉진하고 효율적인 정보와
+                                    서비스를 제공하는 커뮤니티 환경을 조성하는 것을 목적으로 한다.
+
+                                            
+                                        </td>
+                                    </tr>    
+                                    <tr >
+                                        <td style="text-align: left;width: 180px;"> 
+                                            개발 Tool
+                                        </td>
+                                        <td style="text-align: left; padding-bottom: 15px;">
+                                            <div class="red" style="width:484px;">Eclipse 21-03, Oracle DB(11g), Sql developer, Vs Code, Drawio, Git(SourceTree),
+                                                Erd Cloud, Figma, Apache Tomcat – 8.5.40</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">  
+                                            개발 Language
+                                        </td>
+                                        <td style="text-align: left;padding-bottom: 15px;">
+                                            <div class="red">JAVA (JDK 11), Oracle SQL, HTML, CSS, JavaScript(jQuery), JS</div>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td style="text-align: left;">  
+                                           개발 skills
+                                        </td>
+                                        <td style="text-align: left;padding-bottom: 5px;">
+                                            <div class="red">JDBC, Ajax, Servlets, Bootstrap,
+                                                 sweatalert2, Kakao
+                                                map api</div>Google oauth2, Naver login api,javax.mail api, Jquery validation, Kakao 주소 api,Google chart, Full calendar api
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div>
+                                                <input type="button" class="btn btn-outline-dark" value="Git 확인" onclick="window.open(`https://github.com/KKM1502/BuildingWood`);" style="margin: 0px;">
+                                                <input type="button" class="btn btn-outline-dark" value="시연영상" onclick="window.open(`https://www.youtube.com/watch?v=x7EM-7cjLDk&feature=youtu.be`);" style="margin: 0px;">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+
+                                </table>
+                                <div>핵심 업무</div>
+                                <table style="margin-top: 15px; width: 673px;">
+                                    <tr>
+                                        <th style="width:100px;">
+                                            담당자
+                                        </th>
+                                        <th>
+                                           담당 내용
+                                        </th>
+                                    </tr>
+                                    <tr style="margin-bottom: 10px;">
+                                        <td>
+                                            <div class="red"> 김경민</div>
+                                        </td>
+                                        <td>
+                                            <div class="red"> 화면 설계, DB테이블 설계, 회원 더미데이터 생성 및 작업, 더미데이터 작업, SNS 게시판</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            김수민 
+                                        </td>
+                                        <td>
+                                            화면 설계, DB테이블 설계, 더미데이터 작업, 과외 게시판, 메인 페이지
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            남건욱
+                                        </td>
+                                        <td>
+                                            화면 설계, DB테이블 설계, 더미데이터 작업, 로그인/회원가입, 마이페이지,
+                                            동호회 게시판, 관리자
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            이수연
+                                        </td>
+                                        <td>
+                                            화면 설계, DB테이블 설계, 더미데이터 작업, 카풀 게시판
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            정상우
+                                        </td>
+                                        <td>
+                                            화면 설계, DB테이블 설계, 더미데이터 작업, 스터디 게시판
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            조아현
+                                        </td>
+                                        <td>
+                                            화면 설계, DB테이블 설계, 더미데이터 작업, 약속 게시판, 마이페이지-회원정보
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            최영진
+                                        </td>
+                                        <td>
+                                            화면 설계, DB테이블 설계, 더미데이터 작업, 맛집 추천 게시판, 공지/건의 게시판, 메인페이지
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                            
+                        <!-- </div> -->
+                    </table>
+                    
+                </fieldset>
+                <fieldset id="fieldset3">
+                    <legend>Project2</legend>
+                    <h2>Project 교육센터 운영 프로그램 <small><br>(4인 팀 프로젝트)</small></h2>
+                   
+                    <table id="list">
+                        <!-- <div class="items"> -->
+                           
+                        <tr>
+                            <td id="swrapper0" >
+                                  <div id="slider-wrap">
+                                        <ul id="slider" style="padding-left: 0px;">
+                                            <li>
+                                                <DIV><h3 style="background-color: white;">요구분석서 일부</h3></DIV>
+                                                <img src="Project2/9. 그 외(객체모델링)/요구분석서 일부.png">
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: white;">순서도 일부</h3></DIV>
+                                                <img src="Project2/9. 그 외(객체모델링)/순서도일부.png">
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: white;">ERD</h3></DIV>
+                                                <img src="Project2/9. 그 외(객체모델링)/ERD.png">
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: white;">쿼리문 일부</h3></DIV>
+                                                <img src="Project2/9. 그 외(객체모델링)/query1.png">
+                                            </li>
+                                        </ul>
+                                      
+                                       <!--controls-->
+                                        <div class="btns next" id="next0" data-index="0"><i class="fa fa-arrow-right"></i></div>
+                                        <div class="btns previous" id="previous0" data-index="0"><i class="fa fa-arrow-left"></i></div>
+                                        <div id="counter"></div>
+                                      
+                                        <div id="pagination-wrap">
+                                        <ul>
+                                       </ul>
+                                    </div>
+                                      <!--controls-->  
+                                             
+                                </div>
+                              
+                            </td>
+                            <td class="projectinfo">
+                                <table style="width: 673px; border-bottom: 5px solid #EEECECD2;">
+                                    <tr>
+                                        <td colspan="2" style="text-align: left; padding-bottom: 15px;">
+                                            <strong>교육센터 운영 프로그램 제작</strong><br>
+                                            교육 센터를 운영에 필요한 제반 기능들을 하나의 프로그램으로 관리할 수 있다. <br>
+                                            교육 센터 제반 기능의 통합적 관리, 교육생 간 네트워크 활성화, 계정별 기능 이용의 편의성
+
+                                            
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td style="text-align: left;"> 
+                                            개발 환경
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <div class="red">Oracle DBMS, SQL Developer, eXERD</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">  
+                                            개발 Language
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <div class="red">SQL</div>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td style="text-align: left;">  
+                                           개발 skills
+                                        </td>
+                                        <td style="text-align: left;padding-bottom: 5px;">
+                                            <div class="red"> ANSI-SQL, PL/SQL</div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div><input type="button" class="btn btn-outline-dark" value="제작과정" onclick="location.href='Project2/screen.html'" style="margin: 0px;"></div>
+                                        </td>
+                                    </tr>
+                                    
+
+                                </table>
+                                <div>핵심 업무</div>
+                                <table style="margin-top: 15px; width: 673px;">
+                                    
+                                    <tr>
+                                       
+                                        <td>
+                                            1. 교사별로 배정된 과목 리스트를 출력하고 특정 교사가 배정된 과목, 과목정보, 과정,
+과정정보, 교재, 강의실, 강의진행 상태에 대해 출력할 수 있는 기능
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>
+                                            2. 전체 교육생 출결현황을 조회하고 특정 과정 내 교육생 출결을 조회할 수 있는 기능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>
+                                            3. 전체 과정 수료생 취업 현황을 출력후 특정 과정 수료생 취업 현황을 조회 할 수 있는 기능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td>
+                                            4. 교육생 성적 리스트를 출력하고 특정 과목, 교사 별 교육생의 성적을 출력할 수 있는 기능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td>
+                                            5. 특정 교육생의 수업 계획서를 조회할 수 있는 기능
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td>
+                                            6. 멘토링 , 취뽀생 게시판을 조회 및 이용할 수 있는 기능
+                                        </td>
+                                    </tr>
+                                   
+                                </table>
+
+                            </td>
+                        </tr>
+                            
+                        <!-- </div> -->
+                    </table>
+                    
+                </fieldset>
+                <fieldset id="fieldset5">
+                    <legend>Project1</legend>
+                    <h2>Project 금융상품 추천 서비스 <small><br>(5인 팀 프로젝트)</small></h2>
+                   
+                    <table id="list">
+                        <!-- <div class="items"> -->
+                           
+                        <tr>
+                            <td id="swrapper2" >
+                                  <div id="slider-wrap">
+                                        <ul id="slider" style="padding-left: 0px;">
+                                            <li>
+                                                <img src="Project1/images/screen/슬라이드1.PNG">
+                                            </li>
+                                            <li>
+                                                <img src="Project1/images/screen/슬라이드38.PNG">
+                                            </li>
+                                            <li>
+                                                <img src="Project1/images/screen/슬라이드40.PNG">
+                                            </li>
+                                            <li>
+                                                <div><h3 style="background-color: #1F1F1F;">신용 카드 리스트 받아오기</h3></div>
+                                                <img src="Project1/images/code/loadcredit.png">
+                                            </li>
+                                            <li>
+                                                <div><h3 style="background-color: #1F1F1F;">신용카드 > 각 카드 상세 정보 받아오기</h3></div>
+                                                <img src="Project1/images/code/loadcreditD.png">
+                                            </li>
+                                            <li>
+                                                <div><h3 style="background-color: #1F1F1F;">신용카드를 추천해주는 코드(1/2)</h3></div>
+                                                <img src="Project1/images/code/코드1.png">
+                                            </li>
+                                            <li>
+                                                <div><h3 style="background-color: #1F1F1F;">신용카드를 추천해주는 코드(2/2)</h3></div>
+                                                <img src="Project1/images/code/코드2.png">
+                                            </li>
+                                            <li>
+                                                <div><h3 style="background-color: white;">구동화면 추천받기</h3></div>
+                                                <img src="Project1/images/data/신용카드추천.PNG">
+                                            </li>
+                                            <li>
+                                                <div><h3 style="background-color: #272822;">구동화면 리스트</h3></div>
+                                                <img src="Project1/images/data/신용카드조회.PNG">
+                                            </li>
+                                            <li>
+                                                <div><h3 style="background-color: #272822;">구동화면 상세정보</h3></div>
+                                                <img src="Project1/images/data/신용카드상세조회.PNG">
+                                            </li>
+
+                                        </ul>
+                                      
+                                       <!--controls-->
+                                        <div class="btns next" id="next1" data-index="2"><i class="fa fa-arrow-right"></i></div>
+                                        <div class="btns previous" id="previous1" data-index="2"><i class="fa fa-arrow-left"></i></div>
+                                        <div id="counter"></div>
+                                      
+                                        <div id="pagination-wrap">
+                                        <ul>
+                                       </ul>
+                                    </div>
+                                      <!--controls-->  
+                                             
+                                </div>
+                              
+                            </td>
+                            <td class="projectinfo">
+                                <table style="width: 673px; border-bottom: 5px solid #EEECECD2;">
+                                    <tr>
+                                        <td colspan="2" style="text-align: left; padding-bottom: 15px;">
+                                            <strong>자신에게 맞는 상품을 추천받을 수 있는 콘솔 프로젝트입니다.</strong><br>
+                                            고객의 연령층, 정보에 따라 맞춤 금융(적금, 대출, <div class="red">카드</div>)<div class="red">상품</div>을 조회하고 <br>상품을 추천받을 수 있도록 구상했습니다.
+                                            
+                                        </td>
+                                    </tr>    
+                                    <tr>
+                                        <td style="text-align: left;"> 
+                                            개발 Tool
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <div class="red">Eclipse</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">  
+                                            개발 Language
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <div class="red">Java</div>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td style="text-align: left;">  
+                                           개발 skills
+                                        </td>
+                                        <td style="text-align: left;padding-bottom: 5px;">
+                                            <div class="red">ArrayList, BufferedReader, BufferedWriter</div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1">
+                                            <div><input type="button" class="btn btn-outline-dark" value="제작과정" onclick="location.href='Project1/analysis.html'" style="margin: 0px;"></div>
+                                        </td>
+                                        <td>    
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1modal">
+                                                프로젝트를 통한 공부
+                                              </button>
+                                    
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div>핵심 업무</div>
+                                <table style="margin-top: 15px; width: 673px;">
+                                    <tr>
+                                        <th style="width:187px;">
+                                            업무
+                                        </th>
+                                        <th>
+                                            상세내용
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            [관리자]
+                                        </td>
+                                        <td>
+                                            관리자가 이용할 수 있는 기능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            상품관리
+                                        </td>
+                                        <td>
+                                            상품(적금, 대출, <div class="red">신용카드</div>, <div class="red">체크카드</div>) 조회 및 <div class="red">추가/삭제 기능</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            [고객]
+                                        </td>
+                                        <td>
+                                            고객이 이용할 수 있는 기능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1.적금 조회/추천
+                                        </td>
+                                        <td>
+                                            적금상품을 조회하고 나에게 맞는 상품을 추천받는 기능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2.대출 조회/추천
+                                        </td>
+                                        <td>
+                                            대출상품을 조회하고 나에게 맞는 상품을 추천받는 기능
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="red">3.카드 조회/추천</div>
+                                        </td>
+                                        <td>
+                                            <div class="red">(신용,체크)카드상품을 조회하고 나에게 맞는 상품을 추천받는 기능</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4.회원가입
+                                        </td>
+                                        <td>
+                                            회원가입을 할 수 있는 기능
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                            
+                        <!-- </div> -->
+                    </table>
+                    
+                </fieldset>
+
+
+              
+
+                
+            </div>
+        </div>
+    </div>
+
+                                             
+<!-- Modal -->
+<div class="modal" id="project1modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">배운점</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <ul>
+                        <li>낯선 사람들과의 프로젝트 진행 경험</li>
+                        <li>txt파일을 DB처럼 읽고 쓰는 과정을</li>
+                        <li>객체 생성과 인스턴트화 </li>
+                        <li>인스턴트 필드에 접근하기 위한 Getter, Setter </li>
+                    </ul>  
+                </br>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>   
+
+
+<script src="script/project.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

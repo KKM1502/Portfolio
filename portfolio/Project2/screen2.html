@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: black;
+        }
+        li a:hover {
+        opacity: 0.5;
+       }
+        body{
+            margin: 0px;
+        }
+        .menuwrap{
+            
+            display: inline-block;
+            background-color: none;
+            width: 350px;
+            height: 100vh;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            padding-top: 15px;
+            text-align: right;
+            background-color: #006182;
+            color: #DCDBD9;
+
+           
+
+
+        }
+
+        .menuwrap .photo{
+            
+            width: 150px;
+            height: 200px;
+            border: 1px solid white;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .menuwrap .myname{
+            width: 250px;
+            height: 50px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #DCDBD9;
+        }
+        .menuwrap .link{
+
+            width: 300px;
+            height: 40px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            float: right;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+        }
+        .menuwrap .navigation{
+            width: 300px;
+            height: 100%;
+            margin: auto;
+            list-style-type: none;
+            padding-left: 0px;
+            margin-right: 7px;
+            
+        }
+        .menuwrap .navigation li{
+            width: 300px;
+            margin-bottom: 15px;
+            font-size: 30px;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(to right, rgba(52, 74, 107, 0.667) 0%, gray 100%);
+            border-image-slice: 1;
+            text-decoration: none;
+            color: #DCDBD9;
+            font-weight: bold;
+        }
+       
+        .menuwrap .navigation  a{
+            text-decoration: none;
+            color: #DCDBD9;
+            font-weight: bold;
+            
+        }
+        .main{
+            margin-top: 0px;
+            padding-left: 350px;
+            width: 100%-350px;
+            height: 100%;
+            background-color: white;
+    
+        }
+
+        #subcontent{
+            font-size: 30px;
+            text-align: left;
+            padding-left: 304px;
+            padding-top: 50px;
+
+        }
+        .header1{
+            font-weight: bold;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .main{
+            text-align: center;
+            font-size: 45px;
+        }
+
+        #content1 table{
+            text-align: center;
+            font-size: 25px;
+            margin: 30px auto;
+            border-collapse: collapse;
+           
+        }
+        #content1 table td{
+            border: 1px solid black;
+        }
+        #content1 table #left{
+            font-size: 20px  ;
+            width: 100px;
+        }
+        #content1 table #right{
+            text-align: left;
+            padding: 10px 20px;
+            width: 800px;
+        }
+        .me{
+            border:  5px solid red;
+            font-weight: 600;
+        }
+        small{
+            font-size: 18px;
+            color: #DCDBD9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menuwrap">
+            <div class="header1" style="padding-bottom: 50px;" ><a href="/portfolio/Portfolio.html" style="font-size: 25px; text-decoration: none; color: white;" > K_Min's Coding</a></div>
+            <ul class="navigation">
+                <li ><a href="1. 요구분석서/요구분석서.pdf">1.요구분석</a></li> 
+                <li><a href="screen.html">2.순서도</a></li> 
+                <li><a href="3. ERD/논리 모델링_2조.pdf" >3.ERD <small>(논리모델링)</small></a></li> 
+                <li><a href="3. ERD/물리 모델링_2조.pdf" >4.ERD <small>(물리모델링)</small></a></li> 
+                <li><a href="4. 테이블 정의서(DDL)/테이블 정의서(DDL)_2조.pdf">4.테이블 정의<small>(DDL)</small></a></li> 
+                <li><a href="data.html">5. 데이터 정의 <small>(DML)</small></a></li> 
+                <li><a href="6. 쿼리문 정의서(ANSI-SQL)/업무 SQL (데이터 쿼리문)_2조.pdf" >6. 쿼리문 정의<small>(ANSI-SQL)</small></a></li> 
+                <li><a href="7. DB 오브젝트 스크립트/DB 오브젝트 스크립트(PLSQL)_2조.pdf" >7. DB Object Script</a></li> 
+                <li><a href="8. PPT/쌍용교육센터관리시스템 발표 2조 PPT.pdf" >8. 발표 PPT</a></li> 
+                <li><a href="screen2.html" >9. 기타<small>(객체모델링)</small></a></li> 
+                <li><a href="10. 최종 요약본/데이터베이스 프로젝트 요약_2조.pdf" >10. 최종 요약본</a></li> 
+            </ul>
+            <div class="footer">
+            </div>
+        </div>
+        <div class="main">
+            <div id="content1">
+                9. 기타(객체모델링)
+                <BR></BR>
+                <img src="9. 그 외(객체모델링)/객체모델링.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>

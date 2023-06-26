@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: black;
+        }
+      
+        body{
+            margin: 0px;
+        }
+        .menuwrap{
+
+            display: inline-block;
+            background-color: none;
+            width: 350px;
+            height: 100vh;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            padding-top: 15px;
+            text-align: right;
+            background-color: #006182;
+            color: #DCDBD9;
+
+        }
+
+        .menuwrap .photo{
+            
+            width: 150px;
+            height: 200px;
+            border: 1px solid white;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .menuwrap .myname{
+            width: 250px;
+            height: 50px;
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #DCDBD9;
+        }
+        .menuwrap .link{
+
+            width: 300px;
+            height: 40px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            float: right;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+        }
+        .menuwrap .navigation{
+            width: 260px;
+            height: 500px;
+            margin: auto;
+            list-style-type: none;
+            margin-top: 100px;
+        }
+        .menuwrap .navigation li{
+            margin-bottom: 50px;
+            font-size: 30px;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(to right, rgba(52, 74, 107, 0.667) 0%, gray 100%);
+            border-image-slice: 1;
+            text-decoration: none;
+            color: #DCDBD9;
+            font-weight: bold;
+        }
+       li a:hover {
+        opacity: 0.5;
+       }
+        .menuwrap .navigation  a{
+            text-decoration: none;
+            color: #DCDBD9;
+            font-weight: bold;
+            
+        }
+        .main{
+            margin-top: 0px;
+            padding-left: 350px;
+            width: 100%-350px;
+            height: 100vh;
+            background-color: #DCDBD9;
+            text-align: center;
+            font-size: 45px;
+    
+        }
+
+        #subcontent{
+            font-size: 30px;
+            text-align: left;
+            padding-left: 100px;
+            padding-top: 50px;
+
+        }
+        #subcontent:hover{
+            opacity: 0.5;
+        }
+        .header1{
+            font-weight: bold;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+
+     
+
+        #content1 table{
+            text-align: center;
+            font-size: 25px;
+            margin: 30px auto;
+            border-collapse: collapse;
+           
+        }
+        #content1 table td{
+            border: 1px solid black;
+        }
+        #content1 table #left{
+            font-size: 20px  ;
+            width: 100px;
+        }
+        #content1 table #right{
+            text-align: left;
+            padding: 10px 20px;
+            width: 800px;
+        }
+        
+        .data{
+            font-size: 15px;
+            border: 5px solid black;
+            padding: 20px;
+            margin-right: 300px;
+        }
+        .me{
+            border:  5px solid red;
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menuwrap">
+            <div class="menuwrap">
+                <div class="header1" ><a href="/portfolio/Portfolio.html" style="font-size: 25px; text-decoration: none; color: white;"> K_Min's Coding</a></div>
+         
+                <ul class="navigation">
+                    <li ><a href="analysis.html">1.요구분석</a></li> 
+                    <li><a href="screen.html">2.화면설계</a></li> 
+                    <li><a href="data.html" >3.데이터파일</a></li> 
+                    <li><a href="source.html">4.소스</a></li> 
+                    <li><a href="5. 화면캡쳐/">5.화면캡쳐</a></li> 
+                    <li><a href="7. 최종요약본/최종요약본(1조).pdf" >6.최종요약본</a></li> 
+                    <!-- <li><a href=""  onmouseover="f1();" onmouseleave="f2();">7.화면캡쳐</a></li>  -->
+                </ul>
+                <div class="footer">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div id="content1">
+                3.데이터파일
+            <div id="subcontent"><a href="3. 데이터파일/대출/대출 데이터.txt" >대출데이터</a><br></div>
+            <div id="subcontent"><a href="3. 데이터파일/신용카드/신용카드.txt" class="me">신용카드데이터(요약)</a></div>
+            <div id="subcontent"><a href="3. 데이터파일/신용카드/신용카드D" class="me">신용카드상세데이터(1~30)</a></div>
+            <div id="subcontent"><a href="3. 데이터파일/적금/적금상품데이터.txt" >적금데이터</a></div>
+            <div id="subcontent"><a href="3. 데이터파일/체크카드/체크카드데이터.txt" class="me">체크카드데이터(요약)</a></div>
+            <div id="subcontent"><a href="3. 데이터파일/체크카드/체크카드D" class="me">체크카드 상세데이터(1~30)</a></div>
+            <div id="subcontent"><a href="3. 데이터파일/회원/관리자정보.txt" >관리자정보</a></div>
+            <div id="subcontent"><a href="3. 데이터파일/회원/로그인정보.txt" >로그인정보</a></div>
+            <div id="subcontent"><a href="3. 데이터파일/회원/회원 정보.txt" >회원정보</a></div>
+          
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+   
+    </script>
+</body>
+</html>

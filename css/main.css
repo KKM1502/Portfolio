@@ -249,7 +249,6 @@ strong {
     text-align: right;
     transition-property: all;
     transition-duration: 2s;
-    margin-left: -100px;
 
 }
 
@@ -283,7 +282,6 @@ strong {
     text-align: right;
     transition-property: all;
     transition-duration: 2s;
-    margin-left: -100px;
 }
 
 #fieldset4 #list {
@@ -317,7 +315,6 @@ strong {
     text-align: right;
     transition-property: all;
     transition-duration:2s;
-    margin-left: -100px;
 }
 
 #fieldset5 #list {
@@ -342,7 +339,15 @@ strong {
 
 
 }
-
+legend{
+    font-weight: bold;
+}
+h1{
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+}
 
 table{
     margin-top: -15px;
@@ -354,7 +359,7 @@ tr > td{
 }
 .red {
     display: inline-block;
-    color: red;
+    color: cornflowerblue;
     font-weight: bold;
 }
 

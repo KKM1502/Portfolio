@@ -55,9 +55,7 @@
                     <div id="intro" style="width: 900px; margin-right: -70px;">
                         <div>안녕하세요 지원자 김경민입니다.</div>
                         <div>항상 부족한 부분을 배워가며 성장하겠습니다.</div>
-                        <div></div>
-                       <!-- <a href="https://github.com/KKM1502" onclick="window.open(this.href, '_blank'); return false;" style="color: black;"> github</a> -->
-                       <div class="card" style="width: 12rem; height:110px; background-image:url(img/Github.jpeg);background-size: contain;" onclick="window.open(`https://github.com/KKM1502`);" > 
+                       <div class="card" style="width: 12rem; height:110px; background-image:url(img/Github.jpeg);background-size: contain;" onclick="window.open(`https://github.com/KKM1502`)" > 
                       </div>
                         <br>
                     </div>
@@ -87,14 +85,7 @@
                                             <li>     
                                                 <img src="Project1/3조 빌딩숲/메인화면.png">
                                             </li>
-                                            <li>
-                                                <DIV><h3 style="background-color: white;">화면설계 일부  (피그마활용)</h3></DIV>
-                                                <img src="Project3/화면설계.png">
-                                            </li>
-                                            <li>
-                                                <DIV><h3 style="background-color: #FAF7F5;">SNS 글쓰기</h3></DIV>
-                                                <img src="Project3/2.SNS게시판-글쓰기.gif" style="width: 350px;height: 550px; margin-left: 200px;">
-                                            </li>
+                                           
                                             <li>
                                                 <DIV><h3 style="background-color: #FAF7F5;">로그인</h3></DIV>
                                                 <img src="Project3/img/로그인.png">
@@ -106,6 +97,14 @@
                                             <li>
                                                 <DIV><h3 style="background-color: #FAF7F5;">SNS 게시판</h3></DIV>
                                                 <img src="Project3/img/sns.png">
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: white;">화면설계 일부  (피그마활용)</h3></DIV>
+                                                <img src="Project3/화면설계.png">
+                                            </li>
+                                            <li>
+                                                <DIV><h3 style="background-color: #FAF7F5;">SNS 글쓰기</h3></DIV>
+                                                <img src="Project3/2.SNS게시판-글쓰기.gif" style="width: 350px;height: 550px; margin-left: 200px;">
                                             </li>
                                             <li>
                                                 <DIV><h3 style="background-color: #FAF7F5;">맛집추천 게시판</h3></DIV>
@@ -198,6 +197,7 @@
                                     <tr>
                                         <td colspan="2">
                                             <div>
+                                                <input type="button" class="btn btn-outline-dark" value="제작과정" onclick="location.href='Project3/screen.html'" style="margin: 0px;">
                                                 <input type="button" class="btn btn-outline-dark" value="Git 확인" onclick="window.open(`https://github.com/KKM1502/BuildingWood`);" style="margin: 0px;">
                                                 <input type="button" class="btn btn-outline-dark" value="시연영상" onclick="window.open(`https://www.youtube.com/watch?v=x7EM-7cjLDk&feature=youtu.be`);" style="margin: 0px;">
                                             </div>
@@ -363,7 +363,10 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <div><input type="button" class="btn btn-outline-dark" value="제작과정" onclick="location.href='Project2/screen.html'" style="margin: 0px;"></div>
+                                            <div>
+                                                <input type="button" class="btn btn-outline-dark" value="제작과정" onclick="location.href='Project2/screen.html'" style="margin: 0px;">
+                                            </div>
+                                           
                                         </td>
                                     </tr>
                                     
@@ -375,9 +378,7 @@
                                     <tr>
                                        
                                         <td>
-                                            1. 교사별로 배정된 과목 리스트를 출력하고 특정 교사가 배정된 과목, 과목정보, 과정,
-과정정보, 교재, 강의실, 강의진행 상태에 대해 출력할 수 있는 기능
-
+                                            1. 교사별로 배정된 과목 리스트를 출력하고 특정 교사가 배정된 과목, 과목정보, 과정, 과정 정보, 교재, 강의실, 강의진행 상태에 대해 출력할 수 있는 기능
                                         </td>
                                     </tr>
                                     <tr>
@@ -525,9 +526,6 @@
                                             <div><input type="button" class="btn btn-outline-dark" value="제작과정" onclick="location.href='Project1/analysis.html'" style="margin-right: 10px;"></div>
                                         </td>
                                         <td>    
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1modal">
-                                                프로젝트를 통한 공부
-                                              </button>
                                     
                                         </td>
                                     </tr>
@@ -615,32 +613,11 @@
             </div>
         </div>
     </div>
+                                    
 
                                              
-<!-- Modal -->
-<div class="modal" id="project1modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">배운점</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <ul>
-                        <li>낯선 사람들과의 프로젝트 진행 경험</li>
-                        <li>txt파일을 DB처럼 읽고 쓰는 과정을</li>
-                        <li>객체 생성과 인스턴트화 </li>
-                        <li>인스턴트 필드에 접근하기 위한 Getter, Setter </li>
-                    </ul>  
-                </br>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>   
+
+
 
 
 <script src="script/project.js"></script>

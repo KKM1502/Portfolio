@@ -6,9 +6,6 @@ $('.btnRight').hide();
 $('#name').hide();
 $(document).ready(function(){
     $('.nav').hide();
-    $('#fieldset5').css('transform', 'translate(-2000px,0px)');
-    $('#fieldset4').css('transform', 'translate(-2000px,0px)');
-    $('#fieldset3').css('transform', 'translate(-2000px,0px)');
 });
 $('.nav').hide();
 $('#fullname').hide();
@@ -32,18 +29,6 @@ $(window).scroll(function () {
         $('.mainheader > div').css('color', 'white');
         $('.mainheader > div').css('border', '3px solid white');
         $('.nav').show(400);
-        if ($(window).scrollTop() > 3000) {
-            
-            $('#fieldset5').css('transform', 'translate(0px,0px)');
-        }
-        if ($(window).scrollTop() > 2300) {
-            
-            $('#fieldset3').css('transform', 'translate(0px,0px)');
-        }
-        if ($(window).scrollTop() > 1600) {
-            
-            $('#fieldset4').css('transform', 'translate(0px,0px)');
-        }
 
 
     } else {
@@ -106,7 +91,7 @@ function forskills(){
 
 
 function forprojects(){
-    $(window).scrollTop(2299);
+    $(window).scrollTop(2399);
 
 }
 

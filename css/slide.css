@@ -2,7 +2,7 @@
 
 #swrapper0{
   width:700px;
-  height:550px;
+  height:600px;
   position:relative;
   padding-right: 15px;
   color:#fff;
@@ -11,7 +11,7 @@
 
 #swrapper1{
   width:700px;
-  height:550px;
+  height:600px;
   position:relative;
   padding-right: 15px;
   color:#fff;
@@ -19,7 +19,7 @@
 }
 #swrapper2{
   width:700px;
-  height:550px;
+  height:600px;
   position:relative;
   padding-right: 15px;
   color:#fff;
@@ -29,7 +29,7 @@
 
 #slider-wrap{
   width:700px;
-  height:550px;
+  height:600px;
   position:relative;
   overflow:hidden;
 }
@@ -47,7 +47,7 @@
   float:left;
   position:relative;
   width:700px;
-  height:550px; 
+  height:600px; 
 }
 
 #slider-wrap ul#slider li > div{
@@ -125,7 +125,7 @@
 /*bar*/
 #pagination-wrap{
   min-width:20px;
-  margin-top:500px;
+  margin-top:550px;
   margin-left: auto; 
   margin-right: auto;
   height:15px;

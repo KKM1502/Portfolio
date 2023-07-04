@@ -85,7 +85,7 @@ function forabout(){
 
 }
 function forskills(){
-    $(window).scrollTop(1549);
+    $(window).scrollTop(1649);
 
 }
 

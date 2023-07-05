@@ -49,25 +49,32 @@
         .carousel__button.fancybox__button--close:hover{
             opacity: 0.6;
         }
+        .fancybox__image{
+            width:1400px;
+        }
+        .video-stream.html5-main-video{
+            width:1400px;
+        }
     </style>
 
 </head>
 
 <body>
+    <img src="/click (1).png" alt="" id="checkcursor" onclick="forabout();">
     <div class="wrapper">
         <div id="bgimg" style="background-color: #FAF7F5;"> </div>
         <div class="main">
+            
             <div id="home">
-                <div class="header1" style="font-size: 25px;" onclick="location.href=''">K_Min's Coding</div>
-                <div class="header2" style="font-size: 13px;" onclick="location.href=''">gyeong112@gmail.com</div>
-                <div class="mainheader" onclick="location.href=''" onmouseover="">
-                    <div>K_Min's Portfolio</div>
+                <div class="header1" style="font-size: 25px;">K_Min's Coding</div>
+                <div class="header2" style="font-size: 13px;">gyeong112@gmail.com</div>
+                <div class="mainheader">
+                    <div onclick="forabout();" id="K_Min">K_Min's Portfolio</div>
                 </div>
                 <div class="subheader">Java & Oracle</div>
             </div>
             <div class="nav">
                 <ul id="navigation">
-                    <li><a href="">home</a></li>
                     <li><a onclick="forabout();">about</a></li>
                     <li><a onclick="forskills();">skills</a></li>
                     <li><a onclick="forprojects();">Projects</a></li>
@@ -179,7 +186,7 @@
                                             <div>
                                                 <input type="button" class="btn btn-outline-dark" value="제작과정" onclick="location.href='Project3/screen.html'" style="margin: 0px;">
                                                 <input type="button" class="btn btn-outline-dark" value="Git 확인" onclick="window.open(`https://github.com/KKM1502/BuildingWood`);" style="margin: 0px;">
-                                                <input type="button" class="btn btn-outline-dark" value="시연영상" onclick="window.open(`https://www.youtube.com/watch?v=x7EM-7cjLDk&feature=youtu.be`);" style="margin: 0px;">
+                                                <input type="button" class="btn btn-outline-dark" value="시연영상" onclick="window.open(`https://youtu.be/x7EM-7cjLDk`);" style="margin: 0px;">
                                             </div>
                                         </td>
                                     </tr>
@@ -297,25 +304,6 @@
                                                 <img src="Project3/img/sns.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
-                                            
-                                            <li>
-                                                <DIV><h3>SNS 글쓰기</h3></DIV>
-                                                <a href="Project3/img/글쓰기.gif" data-fancybox="Project3">
-                                                <img src="Project3/img/글쓰기.gif" style="height: 450px; margin-top: 75px;">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <DIV><h3>SNS 댓글쓰기 & 좋아요</h3></DIV>
-                                                <a href="Project3/img/댓글쓰기&좋아요.gif" data-fancybox="Project3">
-                                                <img src="Project3/img/댓글쓰기&좋아요.gif" style="height: 450px; margin-top: 75px;">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <DIV><h3>SNS 건물 게시판 이동</h3></DIV>
-                                                <a href="Project3/img/건물 게시판 이동.gif" data-fancybox="Project3">
-                                                <img src="Project3/img/건물 게시판 이동.gif" style="height: 450px; margin-top: 75px;">
-                                                </a>
-                                            </li>
                                             <li>
                                                 <DIV><h3>맛집추천 게시판</h3></DIV>
                                                 <a href="Project3/img/맛집추천.png" data-fancybox="Project3">
@@ -362,6 +350,12 @@
                                                 <DIV><h3>관리자페이지</h3></DIV>
                                                 <a href="Project3/img/관리자기능.png" data-fancybox="Project3">
                                                 <img src="Project3/img/관리자기능.png"  style="height: 450px; margin-top: 75px;">
+                                                 </a>
+                                            </li>
+                                            <li>
+                                                <DIV><h3>시연영상</h3></DIV>
+                                                <a href="https://www.youtube.com/embed/x7EM-7cjLDk?t=98" data-fancybox="Project3">
+                                                <iframe style="margin-top: 75px;" width="700" height="450" src="https://www.youtube.com/embed/x7EM-7cjLDk?t=98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                                  </a>
                                             </li>
 
@@ -520,20 +514,28 @@
                                   <div id="slider-wrap">
                                         <ul id="slider" style="padding-left: 0px;">
                                             <li>
+                                                <a href="Project2/9. 그 외(객체모델링)/요구분석서 일부.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">요구분석서 일부</h3></DIV>
                                                 <img src="Project2/9. 그 외(객체모델링)/요구분석서 일부.png">
+                                                </a>
                                             </li>
                                             <li>
+                                                <a href="Project2/9. 그 외(객체모델링)/순서도일부.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">순서도 일부</h3></DIV>
                                                 <img src="Project2/9. 그 외(객체모델링)/순서도일부.png">
+                                                </a>
                                             </li>
                                             <li>
+                                                <a href="Project2/9. 그 외(객체모델링)/ERD.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">ERD</h3></DIV>
                                                 <img src="Project2/9. 그 외(객체모델링)/ERD.png">
+                                                </a>
                                             </li>
                                             <li>
+                                                <a href="Project2/9. 그 외(객체모델링)/query1.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">쿼리문 일부</h3></DIV>
                                                 <img src="Project2/9. 그 외(객체모델링)/query1.png">
+                                                </a>
                                             </li>
                                         </ul>
                                       
@@ -660,41 +662,72 @@
                                   <div id="slider-wrap">
                                         <ul id="slider" style="padding-left: 0px;">
                                             <li>
+                                                <a href="Project1/images/screen/슬라이드1.PNG" data-fancybox="Project1">
                                                 <img src="Project1/images/screen/슬라이드1.PNG">
+                                                </a>
                                             </li>
                                             <li>
+                                                 <a href="Project1/images/screen/슬라이드38.PNG" data-fancybox="Project1">
                                                 <img src="Project1/images/screen/슬라이드38.PNG">
+                                                </a>
                                             </li>
                                             <li>
+                                                 <a href="Project1/images/screen/슬라이드40.PNG" data-fancybox="Project1">
                                                 <img src="Project1/images/screen/슬라이드40.PNG">
+                                                </a>
                                             </li>
                                             <li>
+                                                 
                                                 <div><h3 style="background-color: #1F1F1F;">신용 카드 리스트 받아오기</h3></div>
-                                                <img src="Project1/images/code/loadcredit.png">
+                                                <a href="Project2/9. 그 외(객체모델링)/요구분석서 일부.png" data-fancybox="Project1">
+                                            
+                                                <img src="Project2/9. 그 외(객체모델링)/요구분석서 일부.png">
+                                                </a>
                                             </li>
                                             <li>
+                                                 
                                                 <div><h3 style="background-color: #1F1F1F;">신용카드 > 각 카드 상세 정보 받아오기</h3></div>
+                                                <a href="Project1/images/code/loadcreditD.png" data-fancybox="Project1">
                                                 <img src="Project1/images/code/loadcreditD.png">
+                                                </a>
                                             </li>
                                             <li>
+                                                 
                                                 <div><h3 style="background-color: #1F1F1F;">신용카드를 추천해주는 코드(1/2)</h3></div>
+                                                <a href="Project1/images/code/코드1.png" data-fancybox="Project1">
                                                 <img src="Project1/images/code/코드1.png">
+                                                </a>
                                             </li>
                                             <li>
+                                                 
                                                 <div><h3 style="background-color: #1F1F1F;">신용카드를 추천해주는 코드(2/2)</h3></div>
+                                                <a href="Project1/images/code/코드2.png" data-fancybox="Project1">
                                                 <img src="Project1/images/code/코드2.png">
+                                                </a>
                                             </li>
                                             <li>
+                                                 
                                                 <div><h3 style="background-color: white;">구동화면 추천받기</h3></div>
+                                                <a href="Project1/images/data/신용카드추천.PNG" data-fancybox="Project1">
+                                                
                                                 <img src="Project1/images/data/신용카드추천.PNG">
+                                                </a>
                                             </li>
                                             <li>
+                                                 
                                                 <div><h3 style="background-color: #272822;">구동화면 리스트</h3></div>
+                                                <a href="Project1/images/data/신용카드조회.PNG" data-fancybox="Project1">
+                                                
                                                 <img src="Project1/images/data/신용카드조회.PNG">
+                                                </a>
                                             </li>
                                             <li>
+                                                 
                                                 <div><h3 style="background-color: #272822;">구동화면 상세정보</h3></div>
+                                                <a href="Project1/images/data/신용카드상세조회.PNG" data-fancybox="Project1">
+                                                
                                                 <img src="Project1/images/data/신용카드상세조회.PNG">
+                                                </a>
                                             </li>
 
                                         </ul>

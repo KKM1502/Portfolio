@@ -387,3 +387,18 @@ background-color: #eeececd2; /* 홀수 번째 요소 배경색 */
     border: 3px solid #999;
 
 }
+#checkcursor{
+    position: fixed;
+    right: 34%;
+    top: 52%;
+    width: 100px;
+    transition: 2s;
+}
+#checkcursor:hover{
+    cursor: pointer;
+    opacity: 0.2;
+}
+#K_Min:hover{
+    opacity: 0.7;
+    
+}

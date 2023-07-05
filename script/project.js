@@ -11,6 +11,8 @@ var sliderWidth=[];
 var totalcontent=$('#content').children().length-2;
 console.log(totalcontent)
 
+
+
 for(var i = 0; i<totalcontent; i++){
   pos.push(0);
   totalSlides.push($('#swrapper'+i+' #slider-wrap ul li').length);

@@ -339,6 +339,38 @@ strong {
 
 
 }
+#fieldset6{
+    outline: none;
+    border: 0;
+    padding: 10px 250px;
+    background-color: white;
+    text-align: right;
+    transition-property: all;
+    transition-duration:2s;
+}
+
+#fieldset6 #list {
+    height: 75vh;
+    overflow: hidden;
+    text-align: center;
+    /* border: 5px solid red; */
+
+
+}
+#fieldset6 .item {
+    border: 5px solid #999;
+    /* width:1379px; */
+    width: 450px;
+    height: 70vh;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 70px 5px;
+    float: left;
+    transition-property: all;
+    transition-duration: 1s;
+
+
+}
 legend{
     font-weight: bold;
 }
@@ -401,4 +433,22 @@ background-color: #eeececd2; /* 홀수 번째 요소 배경색 */
 #K_Min:hover{
     opacity: 0.7;
     
+}
+#clickforproject4{
+    position: absolute;
+    width: 150px;
+    transform: rotate(75deg);
+    translate: -900% 20%;
+}
+#clickforproject3{
+    position: absolute;
+    width: 150px;
+    transform: rotate(75deg);
+    translate: -900% -60%;
+}
+#clickforproject2{
+    position: absolute;
+    width: 150px;
+    transform: rotate(75deg);
+    translate: -900% -60%;
 }

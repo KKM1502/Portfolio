@@ -77,10 +77,10 @@
 /*btns*/
 .btns{
   position:absolute;
-  width:50px;
-  height:60px;
-  top:50%;
-  margin-top:-25px;
+  width:100px;
+  height:200px;
+  top:40%;
+  margin-top:-40px;
   line-height:57px;
   text-align:center;
   cursor:pointer; 
@@ -102,11 +102,11 @@
 
 .btns:hover{
   background:gray;
-  opacity: 0.5; 
+  opacity: 0.15; 
 }
 
-.next{right:-50px; border-radius:7px 0px 0px 7px;}
-.previous{left:-50px; border-radius:0px 7px 7px 7px;}
+.next{right:-100px; border-radius:7px 0px 0px 7px;}
+.previous{left:-100px; border-radius:0px 7px 7px 7px;}
 
 #counter{
   font-family: 'Anton',sans-serif;
@@ -159,7 +159,10 @@
   box-shadow:rgba(0,0,0,0.1) 1px 1px 0px; 
 }
 
-
+.fa{
+    font-size: 30px;
+    margin-top: 85px;
+}
 
 
 /*ANIMATION*/

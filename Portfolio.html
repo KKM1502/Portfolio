@@ -32,12 +32,25 @@
 
     <style>
         .carousel__button.is-prev{
+            width: 100px;
+            height: 100px;
             background-color: white;
+        }
+        .carousel__button.is-prev > svg{
+            width: 60px;
+            height: 60px;
         }
         .carousel__button.is-next{
+            width: 100px;
+            height: 100px;
             background-color: white;
         }
+        .carousel__button.is-next > svg{
+            width: 60px;
+            height: 60px;
+        }
         .carousel__button.fancybox__button--close{
+
             background-color: white;
         }
         .carousel__button.is-prev:hover{
@@ -60,7 +73,7 @@
 </head>
 
 <body>
-    <img src="/click (1).png" alt="" id="checkcursor" onclick="forabout();">
+    <img src="/click (1).png" alt="click" id="checkcursor" onclick="forabout();">
     <div class="wrapper">
         <div id="bgimg" style="background-color: #FAF7F5;"> </div>
         <div class="main">
@@ -110,7 +123,7 @@
                     </div>
                  
                 </fieldset>
-                <fieldset id="fieldset5">
+                <fieldset id="fieldset6">
                     <legend>Project4</legend>
                     <h2 >Spring Legacy Project 든든<small><br>(6인 팀 프로젝트)</small></h2>
                    
@@ -272,7 +285,8 @@
                 <fieldset id="fieldset4">
                     <legend>Project3</legend>
                     <h2 >Dynamic Web Project 빌딩숲 <small><br>(7인 팀 프로젝트)</small></h2>
-                   
+                    <img src="/pngegg.png" alt="click" id="clickforproject4">
+                    <div>클릭 시 큰 화면으로 보실 수 있으십니다!</div>
                     <table id="list">
             
                         <!-- <div class="items"> -->
@@ -287,73 +301,73 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>로그인</h3></DIV>
+                                                <DIV onclick="f1();"><h3>로그인</h3></DIV>
                                                 <a href="Project3/img/로그인.png" data-fancybox="Project3">
                                                 <img src="Project3/img/로그인.png"   style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3 >회원가입</h3></DIV>
+                                                <DIV onclick="f1();"><h3 >회원가입</h3></DIV>
                                                 <a href="Project3/img/회원가입.png" data-fancybox="Project3">
                                                 <img src="Project3/img/회원가입.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>SNS 게시판</h3></DIV>
+                                                <DIV onclick="f1();"><h3>SNS 게시판</h3></DIV>
                                                 <a href="Project3/img/sns.png" data-fancybox="Project3">
                                                 <img src="Project3/img/sns.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>맛집추천 게시판</h3></DIV>
+                                                <DIV onclick="f1();"><h3>맛집추천 게시판</h3></DIV>
                                                 <a href="Project3/img/맛집추천.png" data-fancybox="Project3">
                                                 <img src="Project3/img/맛집추천.png"  style="height: 450px; margin-top: 75px;">
                                             </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>카풀 게시판</h3></DIV>
+                                                <DIV onclick="f1();"><h3>카풀 게시판</h3></DIV>
                                                 <a href="Project3/img/카풀.png" data-fancybox="Project3">
                                                 <img src="Project3/img/카풀.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>과외 게시판</h3></DIV>
+                                                <DIV onclick="f1();"><h3>과외 게시판</h3></DIV>
                                                 <a href="Project3/img/과외.png" data-fancybox="Project3">
                                                 <img src="Project3/img/과외.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>약속 게시판</h3></DIV>
+                                                <DIV onclick="f1();"><h3>약속 게시판</h3></DIV>
                                                 <a href="Project3/img/약속게시판.png" data-fancybox="Project3">
                                                 <img src="Project3/img/약속게시판.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>스터디 게시판</h3></DIV>
+                                                <DIV onclick="f1();"><h3>스터디 게시판</h3></DIV>
                                                 <a href="Project3/img/스터디.png" data-fancybox="Project3">
                                                 <img src="Project3/img/스터디.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>건의 게시판</h3></DIV>
+                                                <DIV onclick="f1();"><h3>건의 게시판</h3></DIV>
                                                 <a href="Project3/img/건의.png" data-fancybox="Project3">
                                                 <img src="Project3/img/건의.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>마이페이지</h3></DIV>
+                                                <DIV onclick="f1();"><h3>마이페이지</h3></DIV>
                                                 <a href="Project3/img/마이페이지.png" data-fancybox="Project3">
                                                 <img src="Project3/img/마이페이지.png"  style="height: 450px; margin-top: 75px;">
                                                 </a>    
                                             </li>
                                             <li>
-                                                <DIV><h3>관리자페이지</h3></DIV>
+                                                <DIV onclick="f1();"><h3>관리자페이지</h3></DIV>
                                                 <a href="Project3/img/관리자기능.png" data-fancybox="Project3">
                                                 <img src="Project3/img/관리자기능.png"  style="height: 450px; margin-top: 75px;">
                                                  </a>
                                             </li>
                                             <li>
-                                                <DIV><h3>시연영상</h3></DIV>
+                                                <DIV onclick="f1();"><h3>시연영상</h3></DIV>
                                                 <a href="https://www.youtube.com/embed/x7EM-7cjLDk?t=98" data-fancybox="Project3">
                                                 <iframe style="margin-top: 75px;" width="700" height="450" src="https://www.youtube.com/embed/x7EM-7cjLDk?t=98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                                  </a>
@@ -505,7 +519,7 @@
                 <fieldset id="fieldset3">
                     <legend>Project2</legend>
                     <h2>Oracle Project 교육센터 운영 프로그램 <small><br>(4인 팀 프로젝트)</small></h2>
-                   
+                    <img src="/pngegg.png" alt="click" id="clickforproject3">
                     <table id="list">
                         <!-- <div class="items"> -->
                            
@@ -514,26 +528,26 @@
                                   <div id="slider-wrap">
                                         <ul id="slider" style="padding-left: 0px;">
                                             <li>
-                                                <a href="Project2/9. 그 외(객체모델링)/요구분석서 일부.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">요구분석서 일부</h3></DIV>
+                                                <a href="Project2/9. 그 외(객체모델링)/요구분석서 일부.png" data-fancybox="Project2">
                                                 <img src="Project2/9. 그 외(객체모델링)/요구분석서 일부.png">
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="Project2/9. 그 외(객체모델링)/순서도일부.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">순서도 일부</h3></DIV>
+                                                <a href="Project2/9. 그 외(객체모델링)/순서도일부.png" data-fancybox="Project2">
                                                 <img src="Project2/9. 그 외(객체모델링)/순서도일부.png">
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="Project2/9. 그 외(객체모델링)/ERD.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">ERD</h3></DIV>
+                                                <a href="Project2/9. 그 외(객체모델링)/ERD.png" data-fancybox="Project2">
                                                 <img src="Project2/9. 그 외(객체모델링)/ERD.png">
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="Project2/9. 그 외(객체모델링)/query1.png" data-fancybox="Project2">
                                                 <DIV><h3 style="background-color: white;">쿼리문 일부</h3></DIV>
+                                                <a href="Project2/9. 그 외(객체모델링)/query1.png" data-fancybox="Project2">
                                                 <img src="Project2/9. 그 외(객체모델링)/query1.png">
                                                 </a>
                                             </li>
@@ -653,7 +667,7 @@
                 <fieldset id="fieldset5">
                     <legend>Project1</legend>
                     <h2>JAVA Project 금융상품 추천 서비스 <small><br>(5인 팀 프로젝트)</small></h2>
-                   
+                    <img src="/pngegg.png" alt="click" id="clickforproject2">
                     <table id="list">
                         <!-- <div class="items"> -->
                            
@@ -678,9 +692,8 @@
                                             </li>
                                             <li>
                                                  
-                                                <div><h3 style="background-color: #1F1F1F;">신용 카드 리스트 받아오기</h3></div>
+                                                <div><h3 style="background-color: WHITE;">신용 카드 리스트 받아오기</h3></div>
                                                 <a href="Project2/9. 그 외(객체모델링)/요구분석서 일부.png" data-fancybox="Project1">
-                                            
                                                 <img src="Project2/9. 그 외(객체모델링)/요구분석서 일부.png">
                                                 </a>
                                             </li>
@@ -709,7 +722,6 @@
                                                  
                                                 <div><h3 style="background-color: white;">구동화면 추천받기</h3></div>
                                                 <a href="Project1/images/data/신용카드추천.PNG" data-fancybox="Project1">
-                                                
                                                 <img src="Project1/images/data/신용카드추천.PNG">
                                                 </a>
                                             </li>
@@ -725,7 +737,6 @@
                                                  
                                                 <div><h3 style="background-color: #272822;">구동화면 상세정보</h3></div>
                                                 <a href="Project1/images/data/신용카드상세조회.PNG" data-fancybox="Project1">
-                                                
                                                 <img src="Project1/images/data/신용카드상세조회.PNG">
                                                 </a>
                                             </li>
@@ -872,14 +883,14 @@
             </div>
         </div>
     </div>
-                                    
 
-                                             
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="script/project.js"></script>
 <script>
-
+function f1(){
+    event.preventDefault();
+}
 
 </script>
 </body>

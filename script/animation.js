@@ -104,4 +104,6 @@ function forprojects(){
 
 }
 
-
+function forhome(){
+    $(window).scrollTop(0);
+}

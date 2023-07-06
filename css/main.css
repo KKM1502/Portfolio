@@ -428,7 +428,7 @@ background-color: #eeececd2; /* 홀수 번째 요소 배경색 */
 }
 #checkcursor:hover{
     cursor: pointer;
-    opacity: 0.2;
+    opacity: 0.7;
 }
 #K_Min:hover{
     opacity: 0.7;

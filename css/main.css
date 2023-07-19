@@ -438,7 +438,7 @@ background-color: #eeececd2; /* 홀수 번째 요소 배경색 */
     position: absolute;
     width: 150px;
     transform: rotate(75deg);
-    translate: -900% 20%;
+    translate: -900% -80%;
 }
 #clickforproject3{
     position: absolute;
